@@ -1,0 +1,534 @@
+@import "_mixin"
+header
+    position: relative
+    height: 0px
+body::-webkit-scrollbar
+    width: 1px
+    height: 437px
+body::-webkit-scrollbar-track
+    background: #040A0A
+body::-webkit-scrollbar-thumb 
+  background-color: #D978AC
+body
+    scrollbar-width: thin
+    scrollbar-color: #D978AC #040A0A
+header
+    background-color: #000000
+    height: 65px
+    width: 100%
+.menu
+    .logo
+        position: relative
+        bottom: 25px
+        width: 34px
+        height: 75px
+        margin: 0
+        margin-right: 70px
+    .item_logo
+        width: 18px
+        height: 18px
+        text-align: center
+        margin-right: 10px 
+    a
+        text-decoration: none
+        color: #FFFFFF
+    span
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #FFFFFF
+    div
+        padding: 0px
+        text-align: center
+        margin-top: 20px
+    &_btn
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #43FFD2
+        width: 190px
+        height: 40px
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(10px)
+        border-radius: 10px
+        position: relative
+        float: right
+        margin-top: 5px
+        img
+            margin-right: 5px 
+            position: relative
+            bottom: 2px
+        &:hover
+            @include btn2-hover
+        &:active
+            @include btn2-active
+        &:disabled
+            @include btn2-disabled
+        &:focus
+            @include btn2-focus
+    &_cart
+        width: 60px
+        height: 60px
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(10px)
+        border-radius: 10px
+        float: right
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        bottom: 20px
+        img
+            position: relative
+            left: 3px
+    &_number
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        position: relative
+        letter-spacing: 0.1em
+        text-transform: uppercas
+        color: #43FFD2
+        text-align: right
+
+.promo
+    background: url("../img/bg/bg.png") center center/cover no-repeat
+    width: 100%
+    background-color: #040A0A
+    min-height: 2665px
+    z-index: 3
+    &_item
+        width: 255px
+        height: 237px
+        border-radius: 20px
+        background: rgba(0, 0, 0, 0.30)
+        backdrop-filter: blur(10px)
+        flex-direction: column
+        text-align: center
+        &_descr
+            color: #FFF
+            text-align: center
+            font-size: 14px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.84px
+        &_header
+            color: #43FFD2
+            text-align: center
+            font-size: 14px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.56px
+            text-transform: uppercase
+            margin-top: 10px
+            margin-bottom: 10px 
+    &_btns
+        margin-top: 65px
+    &_numeric
+        position: relative
+        top: 3px
+        padding: 10px 
+        width: 160px
+        height: 55px
+        border: 0.5px solid #555
+        display: inline-flex
+        justify-content: space-between
+        align-items: center
+        color: #555
+        text-align: center
+        font-size: 20px
+        font-family: Oswald
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        text-transform: uppercase
+    &_position
+        margin-top: 55px
+        color: #FFF
+        font-size: 12px
+        font-family: Oswald
+        letter-spacing: 0.48px
+        text-transform: uppercase
+    &_img
+        margin-top: 60px
+        text-align: center
+        img
+            margin-top: 20px 
+            margin-bottom: 10px 
+            text-align: center
+            width: 160px
+            height: 185px
+    &_card
+        margin-top: 60px
+        img
+            width: 350px
+            height: 450px
+    &_flower
+        margin-top: 60px
+        &_price
+            color: #43FFD2
+            font-size: 30px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: 1.2px
+            text-transform: uppercase
+            margin-bottom: 20px
+            margin-right: 20px
+        &_sale
+            display: inline-block
+            color: #555
+            font-size: 30px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 300
+            line-height: normal
+            letter-spacing: 1.2px
+            text-decoration: line-through
+            text-transform: uppercase
+        &_struct
+            color: #FFF
+            font-size: 14px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            letter-spacing: 0.56px
+            text-transform: uppercase
+            margin-bottom: 20px
+        &_descr
+            color: #FFF
+            font-size: 14px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.56px
+            text-transform: uppercase
+            margin-bottom: 20px
+        &_addition
+            color: #FFF
+            font-size: 12px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 300
+            line-height: normal
+            letter-spacing: 0.48px
+            &_bold
+                font-weight: 700
+        &_header
+            color: #FFF
+            font-size: 40px
+            font-family: Cormorant
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.8px
+            text-transform: uppercase
+        &_back
+            color: #FFF
+            font-size: 10px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: 0.4px
+            text-transform: uppercase
+            margin-bottom: 20px
+    &_arrow
+        text-align: center
+        margin-bottom: -10px
+        color: #FFFFFF
+.promo_full_item
+    display: flex
+    justify-content: space-between
+
+.pink_text
+    color: #D978AC
+    font-size: 20px
+    font-family: Oswald
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    letter-spacing: 0.8px
+    text-transform: uppercase
+.addition
+    margin: 80px
+
+
+.flag
+    margin-top: 100px
+    div
+        border-bottom: 0.5px solid #555555
+        text-align: center
+        width: 358px
+        height: 50px
+        color: #555555
+        font-size: 20px
+        font-family: Oswald
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: 0.8px
+        text-transform: uppercase
+    input
+        &:checked + div
+            color: #43FFD2
+            border-bottom: 0.5px solid #43FFD2
+        opacity:0
+    
+.paydelivery
+    .pink_text
+        margin-top: 60px
+    ul
+        li
+            color: #FFF
+            font-size: 20px
+            font-family: Oswald
+            font-style: normal
+            font-weight: 300
+            line-height: 26px
+            letter-spacing: 0.4px
+            text-transform: uppercase
+    p
+        color: #FFF
+        font-size: 20px
+        font-family: Oswald
+        font-style: normal
+        font-weight: 300
+        line-height: 26px
+        letter-spacing: 0.4px
+        text-transform: uppercase
+
+
+
+.blue_text
+    color: #43FFD2
+    font-size: 20px
+    font-family: Oswald
+    font-style: normal
+    font-weight: 300
+    line-height: 26px
+    letter-spacing: 0.4px
+    text-transform: uppercase
+.like
+    color: #43FFD2
+    font-size: 30px
+    font-family: Oswald
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    letter-spacing: 1.2px
+    text-transform: uppercase
+    margin-top: 100px
+.item_space
+    display: flex
+    justify-content: space-between
+.form_blue_text
+    color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 0.84px
+    text-transform: uppercase
+    margin-bottom: 4px
+.form_fby
+    margin-top: 20px
+.question
+    &_politic
+        color: #FFF
+        font-size: 10px
+        font-family: Roboto Condensed
+        letter-spacing: 0.2px
+        margin-top: 10px
+        a
+            color: #D978AC
+            font-size: 10px
+            font-family: Roboto Condensed
+            letter-spacing: 0.2px
+            text-decoration-line: underline
+    &_input
+        
+        &_text
+            margin-bottom: 20px
+            background: none
+            border: 1px solid #555
+            width: 400px
+            height: 60px
+            padding: 10px
+            &::placeholder
+                color: #555
+                font-size: 14px
+                font-family: Oswald
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: 0.56px
+                text-transform: uppercase
+            &_comment
+                height: 120px
+                resize: none
+
+        &_btn
+            width: 255px
+            height: 50px
+            background: #43FFD2
+            color: #000
+            font-size: 12px
+            font-family: Oswald
+            font-weight: 700
+            letter-spacing: 1.2px
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            &:hover
+                @include btn1-hover
+            &:active
+                @include btn1-active
+            &:disabled
+                @include btn1-disabled
+            &:focus
+                @include btn1-focus
+.form_text_rank
+    margin-top: 20px
+.form_fb
+    margin-top: 60px
+    margin-bottom: 60px
+.form_text 
+    color: #FFF
+    font-size: 14px
+    font-family: Oswald
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    letter-spacing: 0.84px
+.item
+    display: inline-block
+    margin-right: 50px
+    margin-top: 25px
+    &_header
+        color: #FFF
+        font-size: 20px
+        font-family: Oswald
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: 0.8px
+        text-transform: uppercase
+        margin-top: 10px
+    &_price
+        color: #FFF
+        font-size: 14px
+        font-family: Oswald
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: 0.56px
+        text-transform: uppercase
+        margin-top: 10px
+    .btn_1
+        width: 255px
+        height: 50px
+        margin-top: 20px
+    &_img
+        img
+            width: 255px
+            height: 335px
+
+
+
+
+.btn_1
+    display: inline-block
+    color: #FFF
+    font-size: 12px
+    font-family: Oswald
+    font-weight: 700
+    text-transform: uppercase
+    background: none
+    border: 0.5px solid #FFF
+    width: 220px
+    height: 55px
+    text-align: center
+    &:hover
+        @include btn2-hover
+    &:active
+        @include btn2-active
+    &:disabled
+        @include btn2-disabled
+    &:focus
+        @include btn2-focus
+.number_phone
+    margin-top: 245px 
+
+footer
+    width: 100%
+    background-color: #000000
+    min-height: 337px
+    a
+        text-decoration: none
+    ul
+        list-style: none
+        padding: 0
+.footer_header
+    
+    a
+        color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    font-weight: 700
+    letter-spacing: 0.56px
+    text-transform: uppercase
+    color: #43FFD2
+    margin-top: 25px 
+    margin-bottom: 10px
+.footer_text
+    
+    a
+        color: #FFF
+    font-size: 12px
+    color: #FFF
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 0.48px
+    text-transform: uppercase
+    margin-top: 4px 
+    max-width: 244px
+.footer_contact
+    color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    letter-spacing: 1.4px
+    text-transform: uppercase
+    margin-top: 25px 
+.footer_contact_text
+    color: #FFF
+    font-size: 10px
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 1px
+    text-transform: uppercase
+.icon_footer
+    height: 24px
+    width: 24px
+    margin-top: 38px
+    margin-right: 20px
+
+
+        

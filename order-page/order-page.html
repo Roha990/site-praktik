@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ОФОРМЛЕНИЕ заказа</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="menu row">
+                    <div class="col-md-1"><a href="/index.html"><img class="logo" src="/img/header/logo.svg" alt="logo"></a></div>
+                    <div class="col-md-1"><span><a href="/catalog-page/catalog.html">Каталог</a></span></div>
+                    <div class="col-md-2"><span><a href="/deliverypay-page/deliverypay-page.html">Доставка и оплата</a></span></div>
+                    <div class="col-md-1"><span><a href="/about-page/about-page.html">О нас</a></span></div>
+                    <div class="col-md-1"><span><a href="contact-page.html">Контакты</a></span></div>
+                    <div class="col-md-1"><span><a href="/faq-page/faq-page.html">FAQ</a></span></div>
+                    <div class="col-md-1">
+                        <span>
+                            <span class="item_logo"><img  src="img/header/search.svg" alt="search_logo"></span>
+                            <a href="">Поиск</a>
+                        </span>
+                    </div>
+                    <div class="col-md-3">
+                        <span>
+                            <span class="item_logo"><img  src="img/header/call_logo.svg" alt="call_logo"></span>
+                            <a href="">+375 (29) 113-69-69</a>
+                            <span class="menu_cart">
+                                <img src="img/header/cart_logo.svg" alt="cart_logo">
+                            </span>
+                        </span>
+                    </div>
+                    
+                </div>            
+            </div>
+        </nav>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 promo_position">
+                    Главная / ОФОРМЛЕНИЕ ЗАКАЗА
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6 promo_header">ОФОРМЛЕНИЕ</div>
+                <div class="w-100"></div>
+                <div class="offset-md-1 col-md-6 promo_header">ЗАКАЗА</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order_header">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row form">
+                <div class="col-md-6 blue_text">Контактные данные</div>
+                <div class="offset-md-2 col-md-4 blue_text">ВАШ ЗАКАЗ:</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="">   
+                        <div class="question_header">Ваше имя*</div>
+                        <input type="text" placeholder="Введите ваше имя" class="question_input_text">
+                        <div class="question_header">Ваш телефон*</div>
+                        <input type="text" placeholder="+7 (977) 777-77-77" class="question_input_text">
+                        <div class="question_header">Ваш e-mail*</div>
+                        <input type="text" placeholder="Введите вашу почту" class="question_input_text">
+                        <div class="question_header">Телефон получателя (необязательно)</div>
+                        <input type="text" placeholder="+7 (977) 777-77-77" class="question_input_text">
+                        <div class="question_header">Имя получателя (необязательно)</div>
+                        <input type="text" placeholder="Введите имя получателя" class="question_input_text">
+                        <div class="question_header">Комментарий к заказу</div>
+                        <input type="text" placeholder="Примечания к вашеу заказу,  особые пожелания отделу доставки" class="question_input_text">
+                        <div class="question_header blue_text">Доставка</div>
+                        <div class="radio">
+                            <input type="radio" name="delivery" value="solo" id="solo">
+                            <label for="solo">Самовывоз</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="delivery" value="delivery" id="delivery" checked="checked">
+                            <label for="delivery">Доставка курьером</label>
+                        </div>
+                        <div class="question_header">Город*</div>
+                        <input type="text" placeholder="Выберите город" class="question_input_text">
+                        <div class="question_header">Улица*</div>
+                        <input type="text" placeholder="Выберите город" class="question_input_text">
+                        <div class="smallinput">
+                            <div class="question_header">Корп/стр</div>
+                            <input type="text" placeholder="Корп/стр" class="question_input_text">
+                        </div>
+                        <div class="smallinput">
+                            <div class="question_header">Дом</div>
+                            <input type="text" placeholder="Дом" class="question_input_text">
+                        </div>
+                        <div class="smallinput">
+                            <div class="question_header">Кв/офис</div>
+                            <input type="text" placeholder="Кв/офис" class="question_input_text">
+                        </div>
+                        <div class="smallinput">
+                            <div class="question_header">Время доставки</div>
+                            <input type="text" placeholder="__/__" class="question_input_text">
+                        </div>
+                        <div class="cost">Стоимость доставки 0 ₽</div>
+
+                        <div class="question_header blue_text">ОПЛАТА</div>
+                        <div class="radio">
+                            <input type="radio" name="payment" value="bank" id="bank" checked="checked">
+                            <label for="bank">БАНКОВСКАЯ КАРТА</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="payment" value="nal" id="nal" >
+                            <label for="nal">НАЛИЧНЫМИ</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="payment" value="ap" id="ap" >
+                            <label for="ap">APPLE PAY</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="payment" value="gp" id="gp" >
+                            <label for="gp">GOOGLE PAY</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="payment" value="cr" id="cr" >
+                            <label for="cr">КРИПТОВАЛЮТОЙ</label>
+                        </div>
+                        <div class="radio"> 
+                            <input type="radio" name="payment" value="rc" id="rc" >
+                            <label for="rc">С РАСЧЕТНОГО СЧЕТА</label>
+                        </div>
+
+                        <div class="promocode">
+                            <div class="blue_text">ПРОМОКОД</div>
+                            <div class="promocode_block">
+                                <input type="text" placeholder="Промокод" class="question_input_text">
+                                <button class="btn_1">Применить</и>
+                            </div>
+                        </div>
+                    </form>
+                   
+                </div>
+                <div class="offset-md-2 col-md-4">
+                    <div class="line"></div>
+                    <div class="item_cart">
+                        <img src="img\image-1.png" alt="flower">
+                        <div class="item_wrapper">
+                            <div class="item_name">рубиновые искры</div>
+                            <div class="promo_numeric">
+                                <div>-</div>
+                                <div>1</div>
+                                <div>+</div>
+                            </div>
+                        </div>
+                        <div class="item_wrapper item_wrapper1">
+                            <div class="price">
+                                167.00 ₽
+                            </div>
+                            <div class="delete">Удалить</div>
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+                    <div class="item_cart">
+                        <img src="img\image-2.png" alt="flower">
+                        <div class="item_wrapper">
+                            <div class="item_name">рубиновые искры</div>
+                            <div class="promo_numeric">
+                                <div>-</div>
+                                <div>1</div>
+                                <div>+</div>
+                            </div>
+                        </div>
+                        <div class="item_wrapper item_wrapper1">
+                            <div class="price">
+                                167.00 ₽
+                            </div>
+                            <div class="delete">Удалить</div>
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-4"><div class="generalprice">Общая сумма заказа</div></div>
+                <div class="col-md-2"><div class="generalprice">334.00 ₽</div></div>
+                <div class="w-100"></div>
+                <div class="col-md-4">
+                    <div class="maintext">Скидка = 0 ₽</div>
+                    <div class="maintext">Доставка = 0 ₽</div>
+                    <button class="btn_1 btnpay">К оплате</button>
+                    <p class="politic_text">Нажимая  на кнопку «К Оплате», я даю свое согласие на обработку <br> персональных данных, в соответствии с <a href="" class="politic">Политикой конфиденциальности</a>,<br> а так же ознакомлен с условиями оплаты и доставки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/footer/logo.svg" alt="logo">
+                    <div class="footer_header">реквизиты</div>
+                    <div class="footer_text">ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer_header">Каталог</div>
+                    <ul>
+                        <li class="footer_text"><a href="#">ПОПУЛЯРНОЕ</a></li>
+                        <li class="footer_text"><a href="#">СУХОЦВЕТЫ</a></li>
+                        <li class="footer_text"><a href="#">БУКЕТЫ РОЗ</a></li>
+                        <li class="footer_text"><a href="#">КОМПОЗИЦИИ ИЗ ЦВЕТОВ</a></li>
+                        <li class="footer_text"><a href="#">ИНДИВИДУАЛЬНЫЙ БУКЕТ</a></li>
+                        <li class="footer_text"><a href="#">БУКЕТ НА ПРАЗДНИК</a></li>
+                        <li class="footer_text"><a href="#">УПАКОВКА ПОДАРКОВ</a></li>
+                        <li class="footer_text"><a href="#">ШАРЫ</Шa></li>
+                        <li class="footer_text"><a href="#">ОТКРЫТКИ</a></li>
+                        <li class="footer_text"><a href="#">КОНВЕРТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer_header">БУКЕТ</div>
+                    <ul>
+                        <li class="footer_text"><a href="#">ДЛЯ ДЕВУШКИ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ МУЖЧИНЫ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ ЖЕНЫ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ МАМЫ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ КОЛЛЕГИ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ НАЧАЛЬНИКА</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ ДОЧКИ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ ДЕТЕЙ</a></li>
+                        <li class="footer_text"><a href="#">ДЛЯ ЖЕНЩИНЫ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer_header"><a href="#">ДОСТАВКА И ОПЛАТА</a></div>
+                    <div class="footer_header"><a href="#">О нас</a></div>
+                    <div class="footer_header"><a href="#">FAQ</a></div>
+                    <div class="footer_header"><a href="#">Контакты</a></div>
+                    <div class="footer_header"><a href="#">ДЛЯ КОРПОРАТИВНЫХ КЛИЕНТОВ</a></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_contact">zakaz@loverflower.by</div>
+                    <div class="footer_contact_text">Доставка 24/7 по договоренности с оператором</div>
+                    <div class="footer_contact">ул. Тимирязева 67</div>
+                    <div class="footer_contact_text">10:00 до 21:00<br>
+                        без выходных</div>
+                    <div class="footer_contact">+375 (29) 113-69-69</div>
+                    <div class="footer_contact_text">прием звонков круглосуточно</div>
+                    <div class="footer_social">
+                        <a href="#1"><img src="img/footer/inst_logo.svg" alt="instagramm_logo" class="icon_footer"></a>
+                        <a href="#2"><img src="img/footer/whatsapp_logo.svg" alt="whatsapp_logo" class="icon_footer"></a>
+                        <a href="#3"><img src="img/footer/call_logo.svg" alt="call_logo" class="icon_footer"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

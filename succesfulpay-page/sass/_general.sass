@@ -1,0 +1,226 @@
+@import "_mixin"
+header
+    position: relative
+    height: 0px
+body::-webkit-scrollbar
+    width: 1px
+    height: 437px
+body::-webkit-scrollbar-track
+    background: #040A0A
+body::-webkit-scrollbar-thumb 
+  background-color: #D978AC
+body
+    scrollbar-width: thin
+    scrollbar-color: #D978AC #040A0A
+header
+    background-color: #000000
+    height: 65px
+    width: 100%
+.menu
+    .logo
+        position: relative
+        bottom: 25px
+        width: 34px
+        height: 75px
+        margin: 0
+        margin-right: 70px
+    .item_logo
+        width: 18px
+        height: 18px
+        text-align: center
+        margin-right: 10px 
+    a
+        text-decoration: none
+        color: #FFFFFF
+    span
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #FFFFFF
+    div
+        padding: 0px
+        text-align: center
+        margin-top: 20px
+    &_btn
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #43FFD2
+        width: 190px
+        height: 40px
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(10px)
+        border-radius: 10px
+        position: relative
+        float: right
+        margin-top: 5px
+        img
+            margin-right: 5px 
+            position: relative
+            bottom: 2px
+        &:hover
+            @include btn2-hover
+        &:active
+            @include btn2-active
+        &:disabled
+            @include btn2-disabled
+        &:focus
+            @include btn2-focus
+    &_cart
+        width: 60px
+        height: 60px
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(10px)
+        border-radius: 10px
+        float: right
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        bottom: 20px
+        img
+            position: relative
+            left: 3px
+    &_number
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        position: relative
+        letter-spacing: 0.1em
+        text-transform: uppercas
+        color: #43FFD2
+        text-align: right
+
+.promo
+    background: url("../img/bg/bg.png") center center/cover no-repeat
+    width: 100%
+    background-color: #040A0A
+    min-height: 850px
+    z-index: 3
+    &_header
+        color: #FFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+        margin-top: 113px
+        &_1
+            position: relative
+            bottom: 60px
+            margin-top: 0px
+    &_liner
+        display: flex
+        justify-content: center
+        align-items: center
+    &_line
+        width: 350px
+        height: 1px
+        background: #D978AC
+        margin-right: 60px
+    &_text
+        color: #FFF
+        font-size: 14px
+        font-family: Oswald
+        letter-spacing: 0.56px
+        text-transform: uppercase
+        margin-top: 30px
+        &_1
+            margin-top: 20px
+    &_main
+        color: #43FFD2
+        font-size: 14px
+        font-family: Oswald
+        font-weight: 700
+        letter-spacing: 0.56px
+        text-decoration-line: underline
+        text-transform: uppercase
+        margin-top: 60px
+        a
+            text-decoration: none
+            color: #43FFD2
+.btn_1
+    color: #FFF
+    font-size: 12px
+    font-family: Oswald
+    font-weight: 700
+    letter-spacing: 1.2px
+    text-transform: uppercase
+    background: none
+    border: 0.5px solid #FFF
+    width: 220px
+    height: 50px
+    text-align: center
+    margin-top: 20px
+    &:hover
+        @include btn2-hover
+    &:active
+        @include btn2-active
+    &:disabled
+        @include btn2-disabled
+    &:focus
+        @include btn2-focus
+.number_phone
+    margin-top: 245px 
+
+footer
+    width: 100%
+    background-color: #000000
+    min-height: 337px
+    a
+        text-decoration: none
+    ul
+        list-style: none
+        padding: 0
+.footer_header
+    
+    a
+        color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    font-weight: 700
+    letter-spacing: 0.56px
+    text-transform: uppercase
+    color: #43FFD2
+    margin-top: 25px 
+    margin-bottom: 10px
+.footer_text
+    
+    a
+        color: #FFF
+    font-size: 12px
+    color: #FFF
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 0.48px
+    text-transform: uppercase
+    margin-top: 4px 
+    max-width: 244px
+.footer_contact
+    color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    letter-spacing: 1.4px
+    text-transform: uppercase
+    margin-top: 25px 
+.footer_contact_text
+    color: #FFF
+    font-size: 10px
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 1px
+    text-transform: uppercase
+.icon_footer
+    height: 24px
+    width: 24px
+    margin-top: 38px
+    margin-right: 20px
+
+
+        

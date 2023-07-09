@@ -1,0 +1,692 @@
+@import "_mixin"
+header
+    position: relative
+    height: 0px
+body::-webkit-scrollbar
+    width: 1px
+    height: 437px
+body::-webkit-scrollbar-track
+    background: #040A0A
+body::-webkit-scrollbar-thumb 
+  background-color: #D978AC
+body
+    scrollbar-width: thin
+    scrollbar-color: #D978AC #040A0A
+.menu
+    .logo
+        position: relative
+        bottom: 25px
+        width: 34px
+        height: 75px
+        margin: 0
+        margin-right: 70px
+    .search_logo
+        width: 18px
+        height: 18px
+        text-align: center
+        margin-right: 10px 
+    a
+        text-decoration: none
+        color: #FFFFFF
+    span
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #FFFFFF
+    div
+        padding: 0px
+        text-align: center
+        margin-top: 20px
+    .contact
+        display: block
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #43FFD2
+        text-align: right
+    .contact_subtext
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 300
+        font-size: 10px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #FFFFFF
+        text-align: right
+    .contact_adress
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #43FFD2
+        text-align: right
+
+    .contact_time
+        font-family: 'Oswald'
+        font-style: normal
+        font-weight: 300
+        font-size: 10px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 4px
+        text-align: right
+    .social
+        width: 60px
+        height: 154px
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(10px)
+        border-radius: 10px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        float: right
+        margin-top: 60px
+        padding: 20px
+    .icon_header
+        width: 24px
+        height: 24px
+
+.promo2
+    width: 100%
+.promo1
+    background: url("../img/bg/promo2.png") bottom center/cover, url("../img/bg/promo.png") center center/cover no-repeat
+    width: 100%
+    min-height: 1244px
+    z-index: 3
+    .promo
+        &_text_1
+            font-family: 'Cormorant'
+            font-style: normal
+            font-weight: 300
+            font-size: 200px
+            letter-spacing: 0.2em
+            text-transform: uppercase
+            color: #FFFFFF
+            text-align: center
+            position: relative
+            top: 60px
+            z-index: 5
+        &_text_2
+            position: relative
+            bottom:90px
+            font-family: 'Cormorant'
+            font-style: normal
+            font-weight: 300
+            font-size: 200px
+            letter-spacing: 0.2em
+            text-transform: uppercase
+            color: #FFFFFF
+            text-align: center
+        &_descr
+            font-family: 'Oswald'
+            font-style: normal
+            font-weight: 400
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            letter-spacing: 0.02em
+            position: relative
+            bottom: 100px
+            color: #FFFFFF
+        &_number
+            font-family: 'Oswald'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            position: relative
+            bottom: 70px
+            letter-spacing: 0.1em
+            text-transform: uppercas
+            color: #43FFD2
+            text-align: right
+        &_btn_1
+            width: 220px
+            height: 50px
+            background: #43FFD2
+            font-family: 'Oswald'
+            font-style: normal
+            font-weight: 700
+            font-size: 12px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #000000
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                @include btn1-hover
+            &:active
+                @include btn1-active
+            &:disabled
+                @include btn1-disabled
+            &:focus
+                @include btn1-focus
+                
+        &_btn_2
+            font-family: 'Oswald'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #43FFD2
+            width: 190px
+            height: 40px
+            background: rgba(0, 0, 0, 0.2)
+            backdrop-filter: blur(10px)
+            border-radius: 10px
+            bottom: 65px
+            position: relative
+            float: right
+            img
+                margin-right: 5px 
+                position: relative
+                bottom: 2px
+            &:hover
+                @include btn2-hover
+            &:active
+                @include btn2-active
+            &:disabled
+                @include btn2-disabled
+            &:focus
+                @include btn2-focus
+        &_cart
+            width: 60px
+            height: 60px
+            background: rgba(0, 0, 0, 0.2)
+            backdrop-filter: blur(10px)
+            border-radius: 10px
+            float: right
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            bottom: 30px
+            img
+                position: relative
+                left: 3px
+.catalog
+    width: 100%
+    min-height: 1002px
+    background: url("../img/bg/promo2.png") bottom center/cover, url("../img/bg/catalog.png") top center/cover 
+    background-color: #040A0A
+    z-index: 10
+    &_name
+        margin-left: 165px 
+        margin-top: 100px
+        color: #FFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+    &_descr
+        color: #FFF
+        font-size: 20px
+        font-family: Oswald
+        font-weight: 300
+        line-height: 26px
+        letter-spacing: 0.8px
+        width: 540px
+    &_back_text
+        color: rgba(10, 23, 23, 0.60)
+        font-size: 200px
+        font-family: Oswald
+        font-weight: 700
+        letter-spacing: 8px
+        text-transform: uppercase
+        z-index: 0
+        position: relative
+        bottom: 260px
+        overflow: hide
+        -webkit-user-select: none
+        user-select: none
+    &_item
+        *
+            z-index: 10
+        div
+            z-index: 11
+        &_1
+            width: 445px
+            height: 281px
+            border-radius: 20px
+            background: rgba(0, 0, 0, 0.20)
+            backdrop-filter: blur(10px)
+            padding-top: 30px 
+            p
+                color: #43FFD2
+                font-size: 30px
+                font-family: Oswald
+                font-weight: 700
+                letter-spacing: 1.2px
+                text-transform: uppercase
+                width: 271px
+                margin-left: 50px
+                z-index: 10
+                
+            ul
+                color: #FFF
+                font-size: 18px
+                font-family: Oswald
+                letter-spacing: 0.72px
+                text-transform: uppercase
+                margin-left: 50px
+            a
+                color: #D978AC
+                font-size: 12px
+                font-family: Oswald
+                font-weight: 700
+                letter-spacing: 1.2px
+                text-decoration-line: underline
+                text-transform: uppercase
+                margin-right: 30px
+                float: right
+                z-index: 10
+        &_2
+            width: 540px
+            height: 310px
+            ul
+                margin-left: 30px
+        &_3
+            margin-top: 30px
+            margin-left: 30px 
+            width: 540px
+            height: 264px
+            ul
+                margin-left: 50px
+.popular
+    width: 100%
+    min-height: 1175px
+    background: url("../img/bg/promo2.png") bottom center/cover, url("../img/bg/popular.png") center center/cover no-repeat 
+    background-color: #040A0A
+    
+    &_check_catalog
+        margin-top: 60px
+        a
+            color: #D978AC
+            font-size: 12px
+            font-family: Oswald
+            font-weight: 700
+            letter-spacing: 1.2px
+            text-decoration-line: underline
+            text-transform: uppercase
+    .arrow
+        display: flex
+        justify-content: center
+        align-items: center
+    &_header
+        color: #FFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+        text-align: center
+        &_1
+            position: relative
+            bottom: 60px
+    &_descr
+        position: relative
+        bottom: 60px
+        color: #FFF
+        font-size: 20px
+        font-family: Oswald
+        font-weight: 300
+        letter-spacing: 0.4px
+        text-align: center
+        left: 25px
+    &_item
+        &_name
+            color: #FFF
+            font-size: 20px
+            font-family: Oswald
+            letter-spacing: 0.8px
+            text-transform: uppercase
+            margin-top: 10px
+        &_price
+            margin-top: 10px
+            color: #FFF
+            font-size: 14px
+            font-family: Oswald
+            font-weight: 700
+            letter-spacing: 0.56px
+            text-transform: uppercase
+            &_sale
+                color: #939393
+                font-size: 14px
+                font-family: Oswald
+                font-weight: 300
+                letter-spacing: 0.56px
+                text-decoration-line: strikethrough
+                text-transform: uppercase
+                text-decoration: line-through
+                margin-left: 10px 
+        &_btn
+            color: #FFF
+            font-size: 12px
+            font-family: Oswald
+            font-weight: 700
+            letter-spacing: 1.2px
+            text-transform: uppercase
+            background: none
+            border: 0.5px solid #FFF
+            width: 220px
+            height: 50px
+            text-align: center
+            margin-top: 20px
+            &:hover
+                @include btn2-hover
+            &:active
+                @include btn2-active
+            &:disabled
+                @include btn2-disabled
+            &:focus
+                @include btn2-focus
+        img
+
+            width: 350px
+            height: 450px
+.order_FAQ
+    width: 100%
+    min-height: 845px
+    background: url("../img/bg/promo2.png") bottom center/cover, url("../img/bg/order_FAQ.png") center center/cover no-repeat 
+    background-color: #040A0A
+    &_text
+        color: #FFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+    &_line
+        width: 65px
+        height: 10px
+        background: #D978AC
+    &_item
+        margin-top: 40px
+    &_step
+        color: #D978AC
+        font-size: 30px
+        font-family: Oswald
+        font-weight: 700
+        letter-spacing: 1.2px
+        text-transform: uppercase
+        &_descr
+            color: #FFF
+            font-size: 14px
+            font-family: Oswald
+            letter-spacing: 0.56px
+            text-transform: uppercase
+            width: 247px
+.special
+    width: 100%
+    min-height: 845px
+    background: url("../img/bg/promo2.png") bottom center/cover, url("../img/bg/special.png") 50% 10%/cover no-repeat 
+    background-color: #040A0A
+    &_header
+        color: #FFFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+    &_header1
+        position: relative
+        bottom:130px
+    &_img
+        margin-top: 30px
+        &_1
+            backdrop-filter: blur(10px)
+            width: 255px
+            height: 223px
+            border-radius: 20px
+        &_2
+            width: 255px
+            height: 292px
+            border-radius: 20px
+            backdrop-filter: blur(10px)
+        &_3
+            width: 160px
+            height: 292px
+            border-radius: 20px
+            backdrop-filter: blur(10px)
+        &_4
+            width: 255px
+            height: 292px
+            border-radius: 20px
+            backdrop-filter: blur(10px)
+    &_line
+        display: flex
+        align-items: center
+        justify-content: center
+        div
+            width: 255px
+            height: 1px
+            background: #D978AC
+            margin: 0
+    &_height
+        height: 0
+    &_text
+        color: #FFF
+        font-size: 14px
+        font-family: Oswald
+        letter-spacing: 0.56px
+        text-transform: uppercase
+        width: 255px
+        margin-top: 30px
+    &_list
+        margin-top: 20px
+        color: #FFF
+        font-size: 14px
+        font-family: Oswald
+        letter-spacing: 0.56px
+        text-transform: uppercase
+        position: relative
+        float: left
+        right: 20px
+        li
+            margin-top: 20px 
+    &_btn
+        width: 255px
+        height: 50px
+        background: #43FFD2
+        color: #000
+        margin-top: 56px
+        font-size: 12px
+        font-family: Oswald
+        font-weight: 700
+        letter-spacing: 1.2px
+        text-transform: uppercase
+        position: relative
+        right: 10px
+        &:hover
+            @include btn1-hover
+        &:active
+            @include btn1-active
+        &:disabled
+            @include btn1-disabled
+        &:focus
+            @include btn1-focus
+    &_arrow
+        position: relative
+        bottom: 60px
+        right: 20pxrr
+.map_text
+    color: #43FFD2
+    font-size: 20px
+    font-family: Oswald
+    font-weight: 700
+    letter-spacing: 0.8px
+    text-transform: uppercase
+    
+.question
+    width: 100%
+    min-height: 830px
+    background: url("../img/bg/question.png") center center/cover no-repeat 
+    background-color: #0F2222
+    &_line
+        display: flex
+        align-items: center
+        justify-content: center
+        div
+            background: #43FFD2
+            width: 255px
+            height: 1px
+    &_text
+        color: #FFF
+        font-size: 14px
+        font-family: Oswald
+        letter-spacing: 0.56px
+        text-transform: uppercase
+    &_header
+        color: #FFF
+        font-size: 100px
+        font-family: Cormorant
+        letter-spacing: 2px
+        text-transform: uppercase
+    &_header1
+        position: relative
+        bottom: 30px
+    &_input
+        &_text
+            background: none
+            border: 1px solid #43FFD2
+            width: 400px
+            height: 60px
+            margin: 10px
+            padding: 10px
+            &::placeholder
+                color: #395959
+                font-size: 14px
+                font-family: Oswald
+                letter-spacing: 0.56px
+                text-align: start
+            &_comment
+                height: 120px
+                resize: none
+                
+        &_btn
+            width: 255px
+            height: 50px
+            background: #43FFD2
+            color: #000
+            font-size: 12px
+            font-family: Oswald
+            font-weight: 700
+            letter-spacing: 1.2px
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            margin: 10px
+            &:hover
+                @include btn1-hover
+            &:active
+                @include btn1-active
+            &:disabled
+                @include btn1-disabled
+            &:focus
+                @include btn1-focus
+    &_politic
+        color: #FFF
+        font-size: 10px
+        font-family: Roboto Condensed
+        letter-spacing: 0.2px
+        a
+            color: #D978AC
+            font-size: 10px
+            font-family: Roboto Condensed
+            letter-spacing: 0.2px
+            text-decoration-line: underline
+.end
+    width: 100%
+    min-height: 620px
+    background: url("../img/bg/end-1.png") 50% 30%/cover no-repeat
+    background-color: #040A0A
+    &_item
+        margin-right: 30px 
+        margin-top: 260px 
+        width: 160px
+        height: 160px
+        backdrop-filter: blur(10px)
+        &_network
+            position: relative
+            bottom: 80px
+    &_text
+        color: #FFF
+        font-size: 160px
+        font-family: Relative
+        line-height: 60px
+        text-transform: lowercase
+.social_end
+    display: flex
+    align-items: space-between
+    position: relative
+    bottom: 50px
+.icon_end
+    margin-right: 30px
+    width: 40px
+    height: 40px
+
+footer
+    width: 100%
+    background-color: #000000
+    min-height: 337px
+    a
+        text-decoration: none
+    ul
+        list-style: none
+        padding: 0
+.footer_header
+    
+    a
+        color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    font-weight: 700
+    letter-spacing: 0.56px
+    text-transform: uppercase
+    color: #43FFD2
+    margin-top: 25px 
+    margin-bottom: 10px
+.footer_text
+    
+    a
+        color: #FFF
+    font-size: 12px
+    color: #FFF
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 0.48px
+    text-transform: uppercase
+    margin-top: 4px 
+    max-width: 244px
+.footer_contact
+    color: #43FFD2
+    font-size: 14px
+    font-family: Oswald
+    letter-spacing: 1.4px
+    text-transform: uppercase
+    margin-top: 25px 
+.footer_contact_text
+    color: #FFF
+    font-size: 10px
+    font-family: Oswald
+    font-weight: 300
+    letter-spacing: 1px
+    text-transform: uppercase
+.icon_footer
+    height: 24px
+    width: 24px
+    margin-top: 38px
+    margin-right: 20px
+
+
+        
